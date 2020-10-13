@@ -1,0 +1,12 @@
+{
+    "Lua.diagnostics.globals": [
+        "gpio",
+        "ow",
+        "tmr",
+        "wifi",
+        "httpServer"
+    ],
+    "Lua.diagnostics.disable": [
+        "lowercase-global"
+    ]
+}
