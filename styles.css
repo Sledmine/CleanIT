@@ -1,0 +1,17 @@
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.brand-logo{
+    margin-left: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#weekTemp, #dailyTemp{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+}
+
+#chart{
+    margin-top: 50px;
+}

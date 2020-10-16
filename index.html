@@ -1,34 +1,54 @@
 <html>
-	<head>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-		/>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-	</head>
-	<body>
-		<nav>
-			<div class="nav-wrapper">
-				<a href="#!" class="brand-logo">Logo</a>
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger"
-					><i class="material-icons">menu</i></a
-				>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="sass.html">Sass</a></li>
-					<li><a href="badges.html">Components</a></li>
-					<li><a href="collapsible.html">Javascript</a></li>
-					<li><a href="mobile.html">Mobile</a></li>
-				</ul>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+	<nav>
+		<div class="nav-wrapper green darken-2">
+			<a href="#!" class="brand-logo">CleanIT</a>
+			<a href="#" data-target="mobile-demo" class="sidenav-trigger">
+				<i class="material-icons">menu</i>
+			</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a class="waves-effect waves-light" href="sass.html">Sass</a></li>
+				<li><a class="waves-effect waves-light" href="badges.html">Components</a></li>
+				<li><a class="waves-effect waves-light" href="collapsible.html">Javascript</a></li>
+				<li><a class="waves-effect waves-light" href="mobile.html">Mobile</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--icon side menu for the mobile view-->
+	<ul class="sidenav" id="mobile-demo">
+		<li><a class="waves-effect waves-teal" href="sass.html">Temperature</a></li>
+		<li><a class="waves-effect waves-teal" href="badges.html">Water level</a></li>
+		<li><a class="waves-effect waves-teal" href="collapsible.html">Water Ph</a></li>
+	</ul>
+	<div class="container"></div>
+		<p class="flow-text">
+			<h3 class="center-align" class="poppins">Temperature</h3>
+		</p>
+		<!--chart container-->
+		<div id="chart" class="container">
+			<canvas id="myChart"></canvas>
+		</div>
+		<!--aditional info container-->
+		</div>
+		<div class="container" id="aditional-info">
+			<div class="row">
+				<div class="col s6"><p id="weekTemp" class="flow-text">a</p></div>
+				<div class="col s6 push-s1"><p id="dailyTemp" class="flow-text">b</p></div>
 			</div>
-		</nav>
-		<ul class="sidenav" id="mobile-demo">
-			<li><a href="sass.html">Sass</a></li>
-			<li><a href="badges.html">Components</a></li>
-			<li><a href="collapsible.html">Javascript</a></li>
-			<li><a href="mobile.html">Mobile</a></li>
-		</ul>
-		<div class="container"></div>
-	</body>
+		</div>
+</body>
 </html>
+
+<!--initialization of javascript elements-->
+<script src="resources.js"></script>
