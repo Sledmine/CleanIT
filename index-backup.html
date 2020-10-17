@@ -31,50 +31,23 @@
 		<li><a class="waves-effect waves-teal" href="badges.html">Water level</a></li>
 		<li><a class="waves-effect waves-teal" href="collapsible.html">Water Ph</a></li>
 	</ul>
-	<p class="flow-text">
-	<h4 class="center-align" class="poppins">Temperature</h4>
-	</p>
-	<!--chart container-->
-	<div class="container">
-		<div class="row">
-			<div class="card orange">
-				<div class="card-content white-text">
-					<div class="card-title center-align">
-						<i class="medium material-icons" style="padding-top: 2%;">whatshot</i>
-					</div>
-					<h4 class="center-align">0 C</h4>
-				</div>
+	<div class="container"></div>
+		<p class="flow-text">
+			<h3 class="center-align" class="poppins">Temperature</h3>
+		</p>
+		<!--chart container-->
+		<div id="chart" class="container">
+			<canvas id="myChart"></canvas>
+		</div>
+		<!--aditional info container-->
+		</div>
+		<div class="container" id="aditional-info">
+			<div class="row">
+				<div class="col s6"><p id="weekTemp" class="flow-text">a</p></div>
+				<div class="col s6 push-s1"><p id="dailyTemp" class="flow-text">b</p></div>
 			</div>
 		</div>
-
-		<div class="row">
-			<div class="card green darken-3">
-				<div class="card-content white-text">
-					<div class="card-title center-align">
-						<i class="medium material-icons" style="padding-top: 2%;">invert_colors_off</i>
-					</div>
-					<h4 class="center-align">pH</h4>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="card blue darken-1">
-				<div class="card-content white-text">
-					<div class="card-title center-align">
-						<i class="medium material-icons" style="padding-top: 2%;">opacity</i>
-					</div>
-					<h4 class="center-align">Water level</h4>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--aditional info container-->
-	</div>
-
 </body>
-
 </html>
 
 <!--initialization of javascript elements-->

@@ -16,7 +16,7 @@ var chart = new Chart(ctx, {
             backgroudColor: 'rgb(255, 255, 255)',
             pointRadius: 6,
             pointBackgroundColor: 'rgb(56, 142, 60)',
-            data: [26, 24.3, 25.1, 27.5, 28, 26.7, 26.5]
+            data: [30, 50, 25.1, 27.5, 28, 26.7, 26.5]
         }]
     },
 
