@@ -1,4 +1,4 @@
-if addr == nil then
+if (addr == nil) then
     print("No device detected.")
 else
     print(addr:byte(1, 8))
@@ -17,6 +17,7 @@ else
                     local data = ow.read_bytes(tempPin, 9)
                     print(data:byte(1, 9))
                     local crc = ow.crc8(string.sub(data, 1, 8))
+                    CRC = crc
                     print("CRC=" .. crc)
                     if crc == data:byte(9) then
                         local t = (data:byte(1) + data:byte(2) * 256) * 625

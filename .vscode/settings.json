@@ -4,7 +4,8 @@
         "ow",
         "tmr",
         "wifi",
-        "httpServer"
+        "httpServer",
+        "sjson"
     ],
     "Lua.diagnostics.disable": [
         "lowercase-global"
