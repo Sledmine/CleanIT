@@ -36,6 +36,21 @@
 		<link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css" />
 	</head>
 	<body class="hold-transition sidebar-mini layout-fixed">
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="loadingModal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+		<div class="d-flex justify-content-center align-items-center h-100">
+			<div class="spinner-border text-light" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+		</div>
 		<div class="wrapper">
 			<!-- Navbar -->
 			<nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -46,12 +61,12 @@
 							><i class="fas fa-bars"></i
 						></a>
 					</li>
-					<li class="nav-item d-none d-sm-inline-block">
-						<a href="index3.html" class="nav-link">Home</a>
-					</li>
-					<li class="nav-item d-none d-sm-inline-block">
-						<a href="#" class="nav-link">Contact</a>
-					</li>
+					<!--<li class="nav-item d-none d-sm-inline-block">-->
+					<!--	<a href="index3.html" class="nav-link">Home</a>-->
+					<!--</li>-->
+					<!--<li class="nav-item d-none d-sm-inline-block">-->
+					<!--	<a href="#" class="nav-link">Contact</a>-->
+					<!--</li>-->
 				</ul>
 			</nav>
 			<!-- /.navbar -->
@@ -735,15 +750,14 @@
 						<!-- Small boxes (Stat box) -->
 						<div class="row">
 							<div class="col-lg-3 col-6">
-                                <!-- small box -->
+								<!-- small box -->
 								<div class="small-box bg-info">
 									<div class="inner">
-										<h3>150</h3>
-
-										<p id="waterLevel">New Orders</p>
+										<h3 id="waterLevel">Loading...</h3>
+										<p>Water Level</p>
 									</div>
 									<div class="icon">
-										<i class="ion ion-bag"></i>
+										<i class="ion ion-waterdrop"></i>
 									</div>
 									<a href="#" class="small-box-footer"
 										>More info <i class="fas fa-arrow-circle-right"></i
@@ -1488,6 +1502,7 @@
 		<script src="dist/js/demo.js"></script>
 		<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 		<script src="dist/js/pages/dashboard.js"></script>
-		<script src="resources.js"></script>
+		<!-- Main Clean IT program -->
+		<script src="interface.js"></script>
 	</body>
 </html>
