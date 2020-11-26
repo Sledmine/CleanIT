@@ -9,5 +9,16 @@
     ],
     "Lua.diagnostics.disable": [
         "lowercase-global"
+    ],
+    "prettier.printWidth": 100,
+    "prettier.tabWidth": 2,
+    "bracket-pair-colorizer-2.unmatchedScopeColor": "",
+    "indentRainbow.excludedLanguages": [
+
+        "plaintext"
+    ],
+    "indentRainbow.ignoreErrorLanguages": [
+        "html",
+        "markdown"
     ]
 }
