@@ -79,6 +79,7 @@ function Res:send(body)
 end
 
 function Res:sendFile(filename)
+    print(tostring(filename))
     if file.exists(filename .. ".gz") then
         filename = filename .. ".gz"
     elseif not file.exists(filename) then

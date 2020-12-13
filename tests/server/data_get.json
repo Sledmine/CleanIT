@@ -1,5 +1,6 @@
 {
-    "waterTemperature": "25.5",
-    "isWaterFull": "1",
-    "waterPh": "3"
+    "waterTemperature": 5,
+    "isWaterEmpty": "0",
+    "waterPh": 6,
+    "crc": 44
 }
